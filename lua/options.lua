@@ -55,5 +55,15 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+-- Set the number of spaces per indentation level globally
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
 
+-- Enable Treesitter folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+
+-- Set foldlevel to a high value to keep folds open by default
+vim.opt.foldlevel = 99
 -- vim: ts=2 sts=2 sw=2 et

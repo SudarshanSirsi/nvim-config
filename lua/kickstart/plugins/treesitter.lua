@@ -12,6 +12,16 @@ return {
         auto_install = true,
         highlight = { enable = true },
         indent = { enable = true },
+        fold = { enable = true },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = 'gnn', -- Start incremental selection
+            node_incremental = 'grn', -- Increment to the next node
+            scope_incremental = 'grc', -- Increment to the next scope
+            node_decremental = 'grm', -- Decrement to the previous node
+          },
+        },
       }
 
       -- There are additional nvim-treesitter modules that you can use to interact
