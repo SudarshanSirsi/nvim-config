@@ -101,7 +101,6 @@ require 'lazy-bootstrap'
 
 -- [[ Configure and install plugins ]]
 require 'lazy-plugins'
-
 vim.cmd 'set clipboard=unnamedplus'
 
 -- The line beneath this is called `modeline`. See `:help modeline`

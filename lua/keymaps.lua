@@ -67,4 +67,6 @@ vim.keymap.set('n', '<leader>ft', ':term<CR>', { desc = 'Open the terminal' })
 --vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set('t', '<A-i>', '<C-\\><C-n>:ToggleTerm<CR>')
 vim.keymap.set('n', '<A-i>', ':ToggleTerm<CR>')
+vim.keymap.set('n', '<C-s>', ':w<CR>', { desc = 'Save the current buffer' })
+vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>i', { desc = 'Save the current buffer' })
 -- vim: ts=2 sts=2 sw=2 et

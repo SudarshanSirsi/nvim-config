@@ -8,11 +8,16 @@ return {
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
+      --  vim.g.tokyonight_transparent = true -- Enable transparency
+
       -- Load the colorscheme here
       vim.cmd.colorscheme 'tokyonight-night'
 
       -- You can configure highlights by doing something like
       vim.cmd.hi 'Comment gui=none'
+      -- vim.cmd.hi 'Normal guibg=NONE ctermbg=NONE'
+      -- vim.cmd.hi 'NormalFloat guibg=NONE ctermbg=NONE'
+      -- vim.cmd.hi 'EndOfBuffer guibg=NONE ctermbg=NONE'
     end,
   },
 }
