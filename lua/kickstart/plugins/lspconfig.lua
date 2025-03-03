@@ -190,6 +190,7 @@ return {
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
       require('mason-lspconfig').setup {
+        auto_install = true,
         handlers = {
           function(server_name)
             local server = servers[server_name] or {}
@@ -204,4 +205,4 @@ return {
     end,
   },
 }
--- vim: ts=2 sts=2 sw=2 et
+-- -- vim: ts=2 sts=2 sw=2 et
